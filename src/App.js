@@ -1,25 +1,43 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import Menu from './components/nav-menu/nav-menu.js';
 import './App.css';
-
+const items = [{
+               id: 'home',
+               url:'#',
+               text: 'Home',
+               active: false
+             },
+             {
+               id: 'services',
+               url:'#',
+               text: 'Services',
+               active: false,
+               dropdown: [{
+                 id: 'for-entrepreneurs',
+                 url:'#',
+                 text: 'For entrepreneurs',
+               }, {
+                 id: 'for-students',
+                 url:'#',
+                 text: 'For students',
+               }, {
+                 id: 'for-hobbyists',
+                 url:'#',
+                 text: 'For hobbyists',
+               }]
+             },
+             {
+               id: 'contact',
+               url:'#',
+               text: 'Contact',
+               active: false
+             }
+             ]
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        {items.map((item)=> <Menu {...item}/>)}
       </div>
     );
   }
