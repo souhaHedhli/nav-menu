@@ -1,0 +1,21 @@
+.navbar {
+  border-bottom: 2px rgb(4, 146, 179) solid;
+}
+
+.dropdown-menu {
+  border: 2px rgb(4, 146, 179) solid;
+  margin-top: 8px;
+}
+
+a:hover {
+  background-color: rgba(4, 147, 179, 0.144);
+  border-radius:15px;
+
+}
+
+.active-item{
+  color: rgb(4, 146, 179)
+}
+.not-active-item{
+  color: grey
+}
