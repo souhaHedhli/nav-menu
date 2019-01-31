@@ -3,6 +3,6 @@ import './drop-list.css'
 
 const DropList = (props) =>
   props.dropList.map((elm, i) =>
-      <a key={i} className="dropdown-item" href="test"> {elm} </a>
+      <div key={i}  href="test"> {elm.text} </div>
   )
 export default DropList

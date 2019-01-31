@@ -40,7 +40,7 @@ const Menu = () => {
         <nav className="navbar navbar-expand-lg navbar-light bg-light ">
 
             <div className="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul className="navbar-nav">
+                <ul className="navbar-style">
                   <MenuItem elements={items}/>
                 </ul>
             </div>

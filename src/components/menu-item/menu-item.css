@@ -4,3 +4,12 @@
 .not-active-item{
   color: grey
 }
+.dropdown-menu{
+  display: flex;
+  flex-direction: column-reverse;
+  border: 2px rgb(4, 146, 179) solid;
+  margin-top: 8px;
+}
+.nav-item  a{
+  text-decoration: none;
+}
